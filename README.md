@@ -15,12 +15,12 @@ tools the skills use) and a Sentry MCP server you run (set its address in `agent
 
 ```bash
 cd sdk/examples/bug-hunter-dot
-export VOICEAGENT_KEY=va_test_…
-node ../../bin/voiceagent.mjs deploy                                     # to test
-echo "$GITHUB_TOKEN" | node ../../bin/voiceagent.mjs vars set GITHUB_TOKEN  # a fine-grained token: read the repo, comment on issues
-echo "$SENTRY_TOKEN" | node ../../bin/voiceagent.mjs vars set SENTRY_TOKEN
-node ../../bin/voiceagent.mjs task run investigate_bug repository=acme/shop issue=482 --wait
-node ../../bin/voiceagent.mjs session                                    # what it is doing now
+export POLKA_KEY=va_test_…
+node ../../bin/polka.mjs deploy                                     # to test
+echo "$GITHUB_TOKEN" | node ../../bin/polka.mjs vars set GITHUB_TOKEN  # a fine-grained token: read the repo, comment on issues
+echo "$SENTRY_TOKEN" | node ../../bin/polka.mjs vars set SENTRY_TOKEN
+node ../../bin/polka.mjs task run investigate_bug repository=acme/shop issue=482 --wait
+node ../../bin/polka.mjs session                                    # what it is doing now
 ```
 
 Or say it to the front: "Can you look into issue 482 in acme/shop?" It assigns the task, tells you

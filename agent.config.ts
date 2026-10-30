@@ -1,9 +1,9 @@
-import { defineAgent } from "@voice-agent/sdk";
+import { defineAgent } from "polka-cli";
 
 // A dot that hunts bugs for a software team. You talk to its front (by voice, chat, in a Meet or
 // through the API); the work runs in its work session: it reads the bug report on GitHub, the
 // errors in Sentry and the recent commits, and writes up what broke, with the evidence.
-// GITHUB_TOKEN and SENTRY_TOKEN are the environment's variables (`voiceagent vars set`).
+// GITHUB_TOKEN and SENTRY_TOKEN are the environment's variables (`polka vars set`).
 export default defineAgent({
   name: "Bug hunter",
   params: {

@@ -1,4 +1,4 @@
-import { defineTest } from "@voice-agent/sdk";
+import { defineTest } from "polka-cli";
 
 // The front: it gives work to its skills instead of doing it, and says what it can do.
 export default [
